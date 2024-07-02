@@ -87,7 +87,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
     //exercicio 7 - Criar Comandos customizados
 
-    it('envia o formuário com sucesso usando um comando customizado', function() {
+    it.only('envia o formuário com sucesso usando um comando customizado', function() {
         cy.fillMandatoryFieldsAndSubmit()
 
         cy.get('.success').should('be.visible')
@@ -95,7 +95,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
     //exercicio 8
 
-    it.only('Contains', function() {
+    it('Contains', function() {
         cy.get('#firstName').type('Eduardo','delay')
         cy.get('#lastName').type('Bueno')
         cy.get('#email').type('eduardobueno08@gmail.com')
