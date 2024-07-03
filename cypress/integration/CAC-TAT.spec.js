@@ -100,7 +100,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('#lastName').type('Bueno')
         cy.get('#email').type('teste@teste.com')
         cy.get('#open-text-area').type('Teste','Enviar') //escrever e procura o nome do botão e clica
-        cy.get('button[type="submit"]').click()
+        cy.contains('button','Enviar').click()
 
         cy.get('.success').should('be.visible')
     })
@@ -234,5 +234,23 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     })
 
     
+//------------------------------ Seção 9 ------------------------------  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
