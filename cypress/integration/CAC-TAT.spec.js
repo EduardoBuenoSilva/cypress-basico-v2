@@ -304,4 +304,16 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         })
         
     })
+
+    //Desafio - Encontre o gato
+
+    it.only('encontra o gato escondido', function() {
+        cy.get('#cat')
+        .invoke('show')
+        .should('be.visible')
+        cy.get('#title')
+        .invoke('text', 'CAC TAT')
+        cy.get('#subtitle')
+        .invoke('text','Eu amo gatos')
+    })
 })
